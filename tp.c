@@ -3,6 +3,7 @@
 #include <time.h>
 
 void aleatorio (int *m1,int n,int m,float p);
+void print (int *m1, int n, int m);
 
 int main () {
 	srand(time(NULL));
@@ -18,16 +19,7 @@ int main () {
 	
 	
 	aleatorio (m1, 10, 10, 0.5);
-	
-	
-	
-	int j;
-	for (i=0;i<n;i++) {
-		for (j=0;j<m;j++) {
-			printf("%d ",m1[i*m+j]);
-			}
-		printf("\n");
-	}
+	print (m1, 10, 10);
 	
 	return 0;
 }
@@ -48,3 +40,16 @@ void aleatorio (int *m1,int n,int m,float p) {
 	}
 
 }
+
+void print (int *m1,int n,int m) {
+
+		int i;
+		int j;
+	for (i=0;i<n;i++) {
+		for (j=0;j<m;j++) {
+			printf("%d ",m1[i*m+j]);
+			}
+		printf("\n");
+	}
+}
+	
