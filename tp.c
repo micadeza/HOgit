@@ -9,17 +9,22 @@ int main () {
 	srand(time(NULL));
 	int *m1;
 	int i;
-	int n=10; //filas
-	int m=10;  //columnas	
-	//float p=0.5;
-	
-	
-	
+	int n; //filas
+	int m;  //columnas	
+	float p;
+
+	printf("Escriba la probabilidad:");
+	scanf(" %f",&p);	
+	printf("Escriba la cantidad de filas de la red:");
+	scanf(" %i",&n);
+	printf("Escriba la cantidad de columnas:");
+	scanf(" %i",&m);
+
 	m1= (int*)malloc(n*m*sizeof(int));
 	
 	
-	aleatorio (m1, 10, 10, 0.5);
-	print (m1, 10, 10);
+	aleatorio (m1, n, m, p);
+	print (m1, n, m);
 	
 	return 0;
 }
