@@ -40,7 +40,7 @@ int main(int argc,char *argv[])
     printf("file not found!");
     exit(1);
   }
-
+ihfdfaia
   fprintf(output, "dimensiones red : %dx%d - Z : %d - P : %d\n\n",n,n,z,p);
 */
   float promedio = 0;
